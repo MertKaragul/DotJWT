@@ -1,0 +1,6 @@
+@DotJwt_HostAddress = http://localhost:5216
+
+GET {{DotJwt_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

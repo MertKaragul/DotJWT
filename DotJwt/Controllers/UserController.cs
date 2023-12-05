@@ -51,30 +51,5 @@ namespace DotJwt.Controllers {
                 return StatusCode(500, new { message = "Server exception" });
             }
         }
-
-
-        [Route("verifyToken")]
-        [HttpPost]
-        public async Task<ActionResult> VerifyToken(string? token)
-        {
-            try
-            {
-                if(token == null) return BadRequest(new { message = "Token is required" });
-
-                var jwtService = new JwtService();
-
-                if(await jwtService.VerifyToken(_configuration,token))
-                {
-                    return Ok(new { message = "Token successfully verified" });
-                }
-
-                return Unauthorized(new { message = "Your token not verifiyed"});
-            }
-            catch(Exception ex)
-            {
-                return StatusCode(500, new { message = "Server exception" });
-            }
-        }
-
     }
 }

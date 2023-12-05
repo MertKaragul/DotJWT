@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DotJwt")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5c8afbf6a41e8e187057a229e41504aec26e3b1")]
 [assembly: System.Reflection.AssemblyProductAttribute("DotJwt")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DotJwt")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

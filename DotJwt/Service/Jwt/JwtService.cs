@@ -21,7 +21,8 @@ namespace DotJwt.Service.Jwt {
             var claims = new[]
             {
                 new Claim(ClaimTypes.NameIdentifier, userModel.Name),
-                new Claim(ClaimTypes.Email, userModel.Email)
+                new Claim(ClaimTypes.Email, userModel.Email),
+                new Claim(ClaimTypes.Role, userModel.Roles)
             };
 
             JwtSecurityToken token = new JwtSecurityToken(

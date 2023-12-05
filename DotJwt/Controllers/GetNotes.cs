@@ -7,10 +7,17 @@ namespace DotJwt.Controllers {
     [Route("~/api/[controller]")]
     [ApiController]
     public class GetNotes : ControllerBase {
-        [Authorize(AuthenticationSchemes = Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme)]
-        [HttpGet]
+        [Authorize(Roles = "ADMIN,USER")]
+        [HttpGet("/getNote")]
         public ActionResult Index() {
-            return Ok(new { message = "Hello user, welcome !" });
+            return Ok(new { message = "Hello user or admin, welcome !" });
         }
-    }
+
+		[Authorize(Roles = "ADMIN")]
+		[HttpGet("/admin")]
+		public ActionResult Admin()
+		{
+			return Ok(new { message = "Hello Admin, welcome !" });
+		}
+	}
 }

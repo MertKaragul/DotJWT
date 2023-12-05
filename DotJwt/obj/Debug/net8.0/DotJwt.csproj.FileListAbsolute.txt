@@ -41,3 +41,4 @@ C:\Users\Mertk\source\repos\DotJwt\DotJwt\obj\Debug\net8.0\refint\DotJwt.dll
 C:\Users\Mertk\source\repos\DotJwt\DotJwt\obj\Debug\net8.0\DotJwt.pdb
 C:\Users\Mertk\source\repos\DotJwt\DotJwt\obj\Debug\net8.0\DotJwt.genruntimeconfig.cache
 C:\Users\Mertk\source\repos\DotJwt\DotJwt\obj\Debug\net8.0\ref\DotJwt.dll
+C:\Users\Mertk\source\repos\DotJwt\DotJwt\obj\Debug\net8.0\DotJwt.sourcelink.json
